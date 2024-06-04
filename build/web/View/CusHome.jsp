@@ -214,8 +214,8 @@
 
         <div class="nav">
             <a href="#">STADIUM LIST</a>
+            <a href="#">POPULAR</a>
             <a href="#">BOOKING HISTORY</a>
-            <a href="#">PROFILE</a>
         </div>
 
         <div class="stadium-list">
