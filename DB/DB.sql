@@ -67,7 +67,7 @@ CREATE TABLE Booking (
     endTime float NOT NULL,
     date date NOT NULL,
     total integer NOT NULL,
-    bookingAccepted boolean NOT NULL,
+    bookingAccepted nvarchar(10) NOT NULL,
     customer_ID nvarchar(10),
     stadium_ID nvarchar(10),
     FOREIGN KEY (customer_ID) REFERENCES Customer(customer_ID),
@@ -111,7 +111,7 @@ VALUES ('CRT001', 1, 'STD001'),
        ('CRT002', 2, 'STD001');
 
 INSERT INTO Booking (booking_ID, courtQuantity, startTime, endTime, date, total, bookingAccepted, customer_ID, stadium_ID) 
-VALUES ('BOOK001', 2, 10.00, 12.00, '2024-06-01', 200, true, 'CUST001', 'STD001');
+VALUES ('BOOK001', 2, 10.00, 12.00, '2024-06-01', 200, 'true', 'CUST001', 'STD001');
 
 
 INSERT INTO BookingDetail (bookingDetail_ID, booking_ID, court_ID) 
